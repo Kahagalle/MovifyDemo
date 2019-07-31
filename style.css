@@ -1024,6 +1024,12 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 	padding: 45px 130px;
 }
 
+.nav-single-page-header {
+	position: relative;
+	background-color: #9352b3;
+	padding: 150px 130px;
+}
+
 .nav-page-header .container {
 	position: relative;
 }
