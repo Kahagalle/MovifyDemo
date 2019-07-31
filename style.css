@@ -744,7 +744,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .s2 .social-links .social-tooltip:hover:after { background: #333; color: #fff; padding: 7px 10px; top: 14px; left: 50px; right: auto; }
 .s2 .social-links .social-tooltip:hover:before { top: 24px; left: 45px; right: auto; border-color: transparent #333; border-width: 5px 5px 5px 0; }
 
-.site-title { font-size: 36px; font-weight: 300; letter-spacing: -0.5px; float: left; line-height: 60px; padding: 10px 0 10px 0; position: relative; z-index: 2; }
+.site-title { font-family: "Bookman Old Style"; font-size: 36px; font-weight: 900; letter-spacing: -0.5px; float: left; line-height: 60px; padding: 10px 0 10px 0; position: relative; z-index: 2; }
 .site-title a { display: block; color: #333; max-width: 100%; }
 .site-title a img { display: block; max-width: 100%; max-height: 60px; height: auto; padding: 0; margin: 0 auto; -webkit-border-radius: 0; border-radius: 0; }
 .site-description { font-size: 16px; font-weight: 300; color: #aaa; float: left; margin: 30px 0 0 20px; position: relative; z-index: 2; }
@@ -1018,6 +1018,51 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .entry-bar.hide-scroll { -webkit-transform: translateY(100%); transform: translateY(100%); }
 
 
+.nav-page-header {
+	position: relative;
+	background-color: #9352b3;
+	padding: 45px 130px;
+}
+
+.nav-page-header .container {
+	position: relative;
+}
+
+.has-transparent-header .nav-page-header {
+	padding: 120px 0 36px 0;
+}
+
+body.home .nav-page-header-inner {
+	text-align: center;
+}
+
+.nav-page-header-title {
+	display: block;
+	font-size: 24px;
+	line-height: 1.4em;
+	font-weight: 400;
+	margin: 0;
+	color: #fff;
+}
+
+body.breadcrumbs-position-default .nav-page-header-title {
+	max-width: 70%;
+}
+
+.page-subheading {
+	font-size: 13px;
+	margin: 0;
+	color: #fff;
+}
+
+.page-subheading p:last-child {
+	margin: 0;
+}
+
+.centered-page-header .nav-page-header-title,
+.centered-minimal-page-header .nav-page-header-title {
+	max-width: 100% !important;
+}
 
 /* ------------------------------------------------------------------------- *
  *  Single

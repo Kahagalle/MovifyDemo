@@ -1,8 +1,8 @@
 <?php $format = get_post_format(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('masonry-item group'); ?>>	
+<article id="post-<?php the_ID(); ?>" <?php post_class('masonry-item group'); ?>>
 	<div class="masonry-inner">
-		
+
 		<div class="entry-top">
 			<div class="entry-thumbnail" href="<?php the_permalink(); ?>">
 				<?php if ( has_post_thumbnail() ): ?>
@@ -34,6 +34,6 @@
 		<?php endif; ?>
 
 
-		
+
 	</div>
-</article><!--/.post-->	
+</article><!--/.post-->

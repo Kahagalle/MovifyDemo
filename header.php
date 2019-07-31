@@ -47,16 +47,5 @@
 			
 		</header><!--/#header-->
 	</div><!--/#header-sticky-->
-	
-	<?php if ( get_header_image() ) : ?>
-		<div class="site-header">
-			<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">
-				<img class="site-image" src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-			</a>
-		</div>
-	<?php endif; ?>
 
 	<div class="container" id="page">
-		<div class="container-inner">			
-			<div class="main">
-				<div class="main-inner group">
