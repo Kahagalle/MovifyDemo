@@ -6,7 +6,7 @@
 		<div class="entry-top">
 			<div class="entry-thumbnail" href="<?php the_permalink(); ?>">
 				<?php if ( has_post_thumbnail() ): ?>
-					<?php the_post_thumbnail('gridzone-medium-h'); ?>
+					<?php the_post_thumbnail('custom-thumbnail'); ?>
 				<?php else: ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title_attribute(); ?>" />
 				<?php endif; ?>
@@ -27,13 +27,12 @@
 		<?php if (get_theme_mod('excerpt-length','0') != '0'): ?>
 			<div class="entry-excerpt">
 				<?php the_excerpt(); ?>
+                <?php /*echo get_the_new_excerpt(apply_filters( 'the_excerpt', get_the_excerpt())) */?>
 			</div>
             <div class="btndiv">
                 <a class="btn" href="<?php the_permalink(); ?>"><strong>DETAILS</strong></a>
             </div>
 		<?php endif; ?>
-
-
 
 	</div>
 </article><!--/.post-->

@@ -714,3 +714,10 @@ function gridzone_skip_link_focus_fix() {
 	<?php
 }
 add_action( 'wp_print_footer_scripts', 'gridzone_skip_link_focus_fix' );
+
+function get_the_new_excerpt($content){
+    $the_str = substr($content, 0, 100);
+    return $the_str;
+}
+
+add_image_size( 'custom-thumbnail', 342, 444, array( 'left', 'top' ) );

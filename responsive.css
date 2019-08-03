@@ -70,6 +70,7 @@
 	.image-caption { display: none; }
 
 	#img-content { display: none; }
+	#login-btn { display: none; }
 
 	/* base */
 	.pad { padding: 20px 20px 10px; }
@@ -180,6 +181,7 @@
 	.gallery-caption { display: none; }
 
 	#img-content { display: none; }
+	#login-btn { display: none; }
 
 	/* base */
 	.page-title h1, 

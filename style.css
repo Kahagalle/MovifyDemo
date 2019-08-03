@@ -744,12 +744,14 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .s2 .social-links .social-tooltip:hover:after { background: #333; color: #fff; padding: 7px 10px; top: 14px; left: 50px; right: auto; }
 .s2 .social-links .social-tooltip:hover:before { top: 24px; left: 45px; right: auto; border-color: transparent #333; border-width: 5px 5px 5px 0; }
 
-.site-title { font-family: "Bookman Old Style"; font-size: 36px; font-weight: 900; letter-spacing: -0.5px; float: left; line-height: 60px; padding: 10px 0 10px 0; position: relative; z-index: 2; }
+.site-title { font-family: "Bookman Old Style"; font-size: 36px; font-weight: 900; letter-spacing: -0.5px; float: left; line-height: 60px; padding: 10px 150px 10px 0; position: relative; z-index: 2; }
 .site-title a { display: block; color: #333; max-width: 100%; }
 .site-title a img { display: block; max-width: 100%; max-height: 60px; height: auto; padding: 0; margin: 0 auto; -webkit-border-radius: 0; border-radius: 0; }
 .site-description { font-size: 16px; font-weight: 300; color: #aaa; float: left; margin: 30px 0 0 20px; position: relative; z-index: 2; }
 .site-header { background: #eee; }
 .site-image { display: block; margin: 0 auto; max-height: 400px; }
+.site-title-log { color: #fff; background-color: #9352b3; border-radius: 5px; font-size: 14px; font-weight: 900; letter-spacing: -0.5px; float: right; padding: 8px 18px 8px 18px; position: relative; z-index: 2; margin-top: 22px; }
+.site-title-log a { display: block; color: #333; max-width: 100%; }
 
 #profile { position: relative; padding-bottom: 0; padding: 10px 20px 20px; }
 #profile-inner { padding-left: 170px; position: relative; z-index: 2; }
@@ -799,7 +801,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 
 /*  header : nav header
 /* ------------------------------------ */
-#nav-header.nav-container { background: transparent; float: right; margin: 12px 0 0 0; }
+#nav-header.nav-container { background: transparent; float: left; margin: 12px 0 0 0; }
 #nav-header .nav-toggle { background: transparent; color: #333; }
 #nav-header .nav-text { color: #999; }
 
@@ -986,7 +988,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .masonry-item img { border-radius: 10px 10px 0 0; display: block; width: 100%; }
 .masonry-item .entry-title {  }
 .masonry-item .entry-title a { display: block; font-size: 16px; font-weight: 600; padding: 20px 20px 0; }
-.masonry-item .entry-excerpt { font-size: 14px; padding: 10px 20px 0; color: #999; }
+.masonry-item .entry-excerpt { font-size: 14px; padding: 10px 20px 0; color: #999; overflow: hidden; line-height:22.5px; height: 67.6px;}
 .masonry-item .btndiv { font-size: 14px; padding: 20px 20px 0; color: #999; }
 .masonry-item .btn { font-size: 14px; padding: 8px 8px 8px; color: #fff; background-color: #9352b3; border-radius: 5px;}
 .masonry-item .entry-meta { font-size: 14px; padding: 14px 20px; color: #999; }

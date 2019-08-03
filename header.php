@@ -42,7 +42,9 @@
 						<div class="nav-wrap container"><?php wp_nav_menu(array('theme_location'=>'mobile','menu_class'=>'nav container-inner group','container'=>'','menu_id' => '','fallback_cb'=> false)); ?></div>									
 					</nav><!--/#nav-mobile-->
 				<?php endif; ?>
-				
+                <div id="login-btn" >
+                    <a href=""><h1 class="site-title-log"><i class="fa fa-user-o"></i> LOGIN</h1></a>
+                </div>
 			</div>
 			
 		</header><!--/#header-->
