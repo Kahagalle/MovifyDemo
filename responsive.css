@@ -13,13 +13,18 @@
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
 	.masonry-item,
 	.col-1c .masonry-item { width: 33.33%; }
+	.single-title-div { padding-left: 350px }
+	.summary { display: none; }
 }
 @media only screen and (max-width: 959px) {
 	.col-1c .masonry-item { width: 50%; }
+	.single-title-div { padding-left: 350px }
+	.summary { display: none; }
 }
 @media only screen and (max-width: 620px) {
 	.masonry-item,
 	.col-1c .masonry-item { width: 100%; }
+	.summary { display: none; }
 }
 
 /* ------------------------------------------------------------------------- *
@@ -71,6 +76,9 @@
 
 	#img-content { display: none; }
 	#login-btn { display: none; }
+
+	.storyline-left-div { width: 100%; }
+	.storyline-right-div { width: 100% }
 
 	/* base */
 	.pad { padding: 20px 20px 10px; }
@@ -182,6 +190,9 @@
 
 	#img-content { display: none; }
 	#login-btn { display: none; }
+
+	.storyline-left-div { width: 100%; }
+	.storyline-right-div { width: 100% }
 
 	/* base */
 	.page-title h1, 

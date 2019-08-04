@@ -3,8 +3,7 @@
  *  Custom functions
 /* ------------------------------------------------------------------------- */
 	
-	// Use a child theme instead of placing custom functions here
-	// http://codex.wordpress.org/Child_Themes
+
 
 	
 /* ------------------------------------------------------------------------- *
@@ -189,6 +188,7 @@ if ( ! function_exists( 'gridzone_scripts' ) ) {
 		wp_enqueue_script( 'gridzone-imagesloaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array( 'jquery' ),'', true );
 		wp_enqueue_script( 'gridzone-masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ),'', true );
 		wp_enqueue_script( 'gridzone-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
+        /*wp_enqueue_script( 'gridzone-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ),'', false );*/
 		if ( is_singular() && get_option( 'thread_comments' ) )	{ wp_enqueue_script( 'comment-reply' ); }
 	}  
 	
@@ -205,6 +205,7 @@ if ( ! function_exists( 'gridzone_styles' ) ) {
 		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'gridzone-responsive', get_template_directory_uri().'/responsive.css' ); }
 		if ( get_theme_mod('dark','off') == 'on' ) { wp_enqueue_style( 'gridzone-dark', get_template_directory_uri().'/dark.css' ); }
 		wp_enqueue_style( 'gridzone-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
+        /*wp_enqueue_style( 'gridzone-bootstrap-css', get_template_directory_uri().'/css/bootstrap.min.css' );*/
 	}
 	
 }
@@ -715,9 +716,27 @@ function gridzone_skip_link_focus_fix() {
 }
 add_action( 'wp_print_footer_scripts', 'gridzone_skip_link_focus_fix' );
 
-function get_the_new_excerpt($content){
+function get_the_new_excerpt($content) {
     $the_str = substr($content, 0, 100);
     return $the_str;
+}
+
+function get_detail_info($id) {
+    ob_start();
+    the_field('details');
+    $output = ob_get_clean();
+    $names = preg_split("/,/", $output);
+    $val = array_values($names);
+    echo $val[$id];
+}
+
+function get_cast($id) {
+    ob_start();
+    the_field('cast');
+    $output = ob_get_clean();
+    $names = preg_split("/,/", $output);
+    $val = array_values($names);
+    echo $val[$id];
 }
 
 add_image_size( 'custom-thumbnail', 342, 444, array( 'left', 'top' ) );
